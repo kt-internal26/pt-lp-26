@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#ffffff" rx="8"/>
+  <rect x="4" y="4" width="192" height="192" fill="none" stroke="#E2E8F0" stroke-width="2" rx="6"/>
+
+  <!-- Top-left position detection square -->
+  <rect x="14" y="14" width="56" height="56" fill="none" stroke="#0F172A" stroke-width="4" rx="4"/>
+  <rect x="24" y="24" width="36" height="36" fill="none" stroke="#0F172A" stroke-width="4" rx="2"/>
+  <rect x="32" y="32" width="20" height="20" fill="#0F172A" rx="2"/>
+
+  <!-- Top-right position detection square -->
+  <rect x="130" y="14" width="56" height="56" fill="none" stroke="#0F172A" stroke-width="4" rx="4"/>
+  <rect x="140" y="24" width="36" height="36" fill="none" stroke="#0F172A" stroke-width="4" rx="2"/>
+  <rect x="148" y="32" width="20" height="20" fill="#0F172A" rx="2"/>
+
+  <!-- Bottom-left position detection square -->
+  <rect x="14" y="130" width="56" height="56" fill="none" stroke="#0F172A" stroke-width="4" rx="4"/>
+  <rect x="24" y="140" width="36" height="36" fill="none" stroke="#0F172A" stroke-width="4" rx="2"/>
+  <rect x="32" y="148" width="20" height="20" fill="#0F172A" rx="2"/>
+
+  <!-- Data modules (simulated pattern) -->
+  <!-- Row 1 of data area -->
+  <rect x="82" y="14" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="98" y="14" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="114" y="14" width="8" height="8" fill="#0F172A" rx="1"/>
+
+  <!-- Row 2 of data area -->
+  <rect x="90" y="22" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="106" y="22" width="8" height="8" fill="#0F172A" rx="1"/>
+
+  <!-- Right-side data -->
+  <rect x="82" y="82" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="90" y="90" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="82" y="98" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="98" y="82" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="106" y="90" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="114" y="82" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="106" y="98" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="114" y="98" width="8" height="8" fill="#0F172A" rx="1"/>
+
+  <rect x="130" y="82" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="146" y="82" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="162" y="82" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="138" y="90" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="154" y="90" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="130" y="98" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="146" y="98" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="162" y="98" width="8" height="8" fill="#0F172A" rx="1"/>
+
+  <!-- Bottom data area -->
+  <rect x="82" y="130" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="98" y="130" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="114" y="130" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="90" y="138" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="106" y="138" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="82" y="146" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="98" y="146" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="114" y="146" width="8" height="8" fill="#0F172A" rx="1"/>
+
+  <rect x="130" y="130" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="146" y="130" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="162" y="130" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="138" y="138" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="154" y="138" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="130" y="146" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="154" y="146" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="162" y="146" width="8" height="8" fill="#0F172A" rx="1"/>
+
+  <rect x="130" y="162" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="146" y="162" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="162" y="162" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="138" y="170" width="8" height="8" fill="#0F172A" rx="1"/>
+
+  <!-- Timing pattern (horizontal) -->
+  <rect x="82" y="66" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="98" y="66" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="114" y="66" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="74" y="82" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="74" y="98" width="8" height="8" fill="#0F172A" rx="1"/>
+  <rect x="74" y="114" width="8" height="8" fill="#0F172A" rx="1"/>
+
+  <!-- Center UPI heart mark -->
+  <circle cx="100" cy="100" r="18" fill="#EFF6FF"/>
+  <text x="100" y="107" text-anchor="middle" font-size="20" font-family="serif">❤</text>
+
+  <!-- "UPI" text label -->
+  <text x="100" y="190" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#64748B" letter-spacing="2">UPI   DONATE</text>
+</svg>

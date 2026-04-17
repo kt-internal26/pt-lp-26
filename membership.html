@@ -1,0 +1,1007 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join Pratap Chandra Das Memorial Trust as a member or make a donation. Become part of a community dedicated to compassion and change."
+    />
+    <title>Membership &amp; Donate — Pratap Chandra Das Memorial Trust</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="has-hero-carousel">
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <!-- Full logo — visible at top of hero -->
+          <img
+            src="images/pcdmt_transparent_bg_logo.png"
+            alt="Pratap Chandra Das Memorial Trust"
+            class="nav-logo-img nav-logo-full"
+          />
+          <!-- Small logo — fades in on scroll -->
+          <img
+            src="images/pcdmt_logo_small.png"
+            alt="PCDMT"
+            class="nav-logo-img nav-logo-small"
+          />
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-item-dropdown">
+            <a href="#" role="button" aria-haspopup="true"
+              >About
+              <svg
+                class="nav-chevron"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="about-founder.html" class="nav-dropdown-link"
+                  ><span class="nav-dropdown-icon" style="background: #fff7ed"
+                    >🙏</span
+                  >About Founder</a
+                >
+              </li>
+              <li>
+                <a href="about-organization.html" class="nav-dropdown-link"
+                  ><span class="nav-dropdown-icon" style="background: #eff6ff"
+                    >🏛️</span
+                  >About Organization</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="membership.html" class="active">Membership</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="membership.html#donate" class="btn-nav">Donate Now</a>
+          </li>
+        </ul>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <div class="mem-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span>Membership & Donate</span>
+        </div>
+        <div class="section-tag animate-fade-up">Join Our Mission</div>
+        <h1 class="section-title animate-fade-up delay-1">
+          Be Part of the Change
+        </h1>
+        <p class="section-subtitle animate-fade-up delay-2">
+          Choose how you'd like to support us — become a lifelong member of our
+          family or make a one-time contribution. Every act of giving creates
+          ripples of impact.
+        </p>
+
+        <!-- Trust badges row -->
+        <div class="mem-hero-badges animate-fade-up delay-3">
+          <span class="mem-hero-badge">🏛️ Registered Trust</span>
+          <span class="mem-hero-badge">🔒 Secure UPI Payments</span>
+          <span class="mem-hero-badge">📜 Official Member Certificate</span>
+          <span class="mem-hero-badge">💬 WhatsApp Confirmation</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== MODE SELECTOR ===== -->
+    <section class="mem-mode-section" id="donate">
+      <div class="container">
+        <!-- Mode Tabs -->
+        <div class="mem-tabs reveal">
+          <button
+            class="mem-tab active"
+            id="tab-member"
+            onclick="switchMode('member')"
+          >
+            <span class="mem-tab-icon">🌟</span>
+            <div>
+              <strong>Membership</strong>
+              <small>Become an official member</small>
+            </div>
+          </button>
+          <button
+            class="mem-tab"
+            id="tab-donate"
+            onclick="switchMode('donate')"
+          >
+            <span class="mem-tab-icon">💙</span>
+            <div>
+              <strong>Donation Only</strong>
+              <small>Contribute without membership</small>
+            </div>
+          </button>
+        </div>
+
+        <!-- ===================== MODE: MEMBERSHIP ===================== -->
+        <div id="mode-member" class="mem-mode-panel active">
+          <!-- ===== MEMBERSHIP CATEGORY + PLAN SELECTOR ===== -->
+          <div class="mcat-selector reveal">
+            <div class="mcat-top">
+              <h3 class="mcat-title">Choose Your Membership</h3>
+              <p class="mcat-subtitle">
+                Select a category and a plan to get started
+              </p>
+            </div>
+
+            <!-- Category cards -->
+            <div class="mcat-categories">
+              <button
+                class="mcat-cat-card active"
+                id="mcat-nokit"
+                onclick="selectCategory('nokit', this)"
+                type="button"
+              >
+                <span class="mcat-cat-check">✓</span>
+                <div class="mcat-cat-icon">🌟</div>
+                <div class="mcat-cat-body">
+                  <strong>Membership without Kit</strong>
+                  <p>Digital certificate &amp; all membership privileges</p>
+                </div>
+              </button>
+              <button
+                class="mcat-cat-card"
+                id="mcat-kit"
+                onclick="selectCategory('kit', this)"
+                type="button"
+              >
+                <span class="mcat-cat-rec">⭐ Recommended</span>
+                <span class="mcat-cat-check">✓</span>
+                <div class="mcat-cat-icon">🎁</div>
+                <div class="mcat-cat-body">
+                  <strong>Membership with Kit</strong>
+                  <p>
+                    All privileges + T-Shirt, Member Badge &amp; printed
+                    Certificate
+                  </p>
+                </div>
+              </button>
+            </div>
+
+            <!-- Kit breakdown — shown when kit is selected -->
+            <div class="mcat-kit-includes" id="mcatKitIncludes">
+              <span class="mcat-kit-label">Kit includes:</span>
+              <div class="mcat-kit-items">
+                <div class="mcat-kit-item">
+                  <span>👕</span>Official PCDMT T-Shirt
+                </div>
+                <div class="mcat-kit-item"><span>📛</span>Member Badge</div>
+                <div class="mcat-kit-item">
+                  <span>📜</span>Printed Certificate
+                </div>
+              </div>
+            </div>
+
+            <!-- Pricing plans -->
+            <div class="mcat-plans-wrap">
+              <!-- Mandatory registration fee — shown only for With Kit -->
+              <div class="mcat-mandatory-fee" id="mcatMandatoryFee">
+                <div class="mcat-mandatory-fee-inner">
+                  <span class="mcat-mandatory-lock">🔒</span>
+                  <div class="mcat-mandatory-body">
+                    <span class="mcat-mandatory-label"
+                      >Mandatory Registration Fee</span
+                    >
+                    <span class="mcat-mandatory-desc"
+                      >One-time fee · Includes T-Shirt, Badge &amp;
+                      Certificate</span
+                    >
+                  </div>
+                  <div class="mcat-mandatory-amount">₹1,000</div>
+                </div>
+                <div class="mcat-mandatory-note">
+                  This fee is required for all kit orders and is charged once at
+                  registration.
+                </div>
+              </div>
+
+              <div class="mcat-plans-label">Select your recurring plan</div>
+              <div class="mcat-plans">
+                <div
+                  class="mcat-plan-card active"
+                  id="mcat-p-monthly"
+                  onclick="
+                    selectPlan(
+                      'monthly',
+                      '₹500',
+                      'Monthly Membership',
+                      '/month',
+                      this,
+                    )
+                  "
+                >
+                  <div class="mcat-plan-name">Monthly</div>
+                  <div class="mcat-plan-price">₹500</div>
+                  <div class="mcat-plan-note">per month</div>
+                  <!-- New line -->
+                  <div class="mcat-plan-meals">Provides 8 meals</div>
+
+                  <div class="mcat-plan-note">per month</div>
+                </div>
+                <div
+                  class="mcat-plan-card mcat-plan-popular"
+                  id="mcat-p-quarterly"
+                  onclick="
+                    selectPlan(
+                      'quarterly',
+                      '₹1,500',
+                      'Quarterly Membership',
+                      '/quarter',
+                      this,
+                    )
+                  "
+                >
+                  <!-- <div class="mcat-plan-badge">Popular</div> -->
+                  <div class="mcat-plan-name">Quarterly</div>
+                  <div class="mcat-plan-price">₹1,500</div>
+                  <div class="mcat-plan-note">every 3 months</div>
+                   <!-- New line -->
+                  <div class="mcat-plan-meals">Provides 25 meals</div>
+
+                  <div class="mcat-plan-note">per 3 months</div>
+                </div>
+                <div
+                  class="mcat-plan-card"
+                  id="mcat-p-annually"
+                  onclick="
+                    selectPlan(
+                      'annually',
+                      '₹6,000',
+                      'Annual Membership',
+                      '/year',
+                      this,
+                    )
+                  "
+                >
+                  <div class="mcat-plan-name">Annual</div>
+                  <div class="mcat-plan-price">₹6,000</div>
+                  <div class="mcat-plan-note">per year</div>
+                  <!-- New line -->
+                  <div class="mcat-plan-meals">Provides 100 meals</div>
+                  <div class="mcat-plan-note">per year</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END CATEGORY + PLAN SELECTOR -->
+
+          <!-- Journey Steps -->
+          <div class="mem-journey reveal">
+            <div class="mem-journey-step active" id="jstep-1">
+              <div class="mem-journey-dot">1</div>
+              <span>Fill Details</span>
+            </div>
+            <div class="mem-journey-line"></div>
+            <div class="mem-journey-step" id="jstep-2">
+              <div class="mem-journey-dot">2</div>
+              <span>Scan & Pay</span>
+            </div>
+            <div class="mem-journey-line"></div>
+            <div class="mem-journey-step" id="jstep-3">
+              <div class="mem-journey-dot">3</div>
+              <span>WhatsApp Confirm</span>
+            </div>
+          </div>
+
+          <!-- Two column layout -->
+          <div class="mem-layout">
+            <!-- LEFT: Form -->
+            <div class="mem-form-col">
+              <div class="mem-form-card reveal">
+                <div class="mem-form-header">
+                  <div class="mem-form-icon">📋</div>
+                  <div>
+                    <h2>Membership Application</h2>
+                    <p>
+                      Fill in your details to register as an official Pratap
+                      Chandra Das Memorial Trust member
+                    </p>
+                  </div>
+                </div>
+
+                <div class="gform-embed-wrap">
+                  <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSds-cdROhdt61xt-W8y9x8kDzy5ra1BB6QWx4N2nuf69oQjlQ/viewform?embedded=true"
+                    class="gform-embed"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    loading="lazy"
+                    title="PCDMT Membership Application Form"
+                  >Loading form…</iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT: Payment Panel -->
+            <div class="mem-payment-col" id="paymentPanel">
+              <div class="mem-payment-card reveal delay-2">
+                <!-- Compact header — dynamically updated by selectPlan() / selectCategory() -->
+                <div class="mem-pay-compact-header">
+                  <div>
+                    <div class="mem-pay-compact-title" id="payPlanLabel">
+                      Monthly Membership
+                    </div>
+                    <div class="mem-pay-compact-fee" id="payFeeDisplay">
+                      ₹500 <span id="payFeeNote">/month</span>
+                    </div>
+                  </div>
+                  <span class="mem-pay-compact-badge" id="payBadgeDisplay"
+                    >🌟 Without Kit</span
+                  >
+                </div>
+
+                <!-- QR Code -->
+                <p class="mem-pay-label">STEP 2 — Scan &amp; Pay</p>
+                <div class="mem-qr-frame">
+                  <img
+                    src="images/pcdmt_qr_code.png"
+                    alt="PCDMT Foundation UPI QR — Scan to pay membership fee"
+                    width="180"
+                    height="180"
+                  />
+                </div>
+                <div class="mem-qr-apps">
+                  <span>Google Pay</span><span>PhonePe</span><span>Paytm</span
+                  ><span>BHIM</span>
+                </div>
+                <div class="mem-qr-wa-number">
+                  <div class="mem-qr-wa-number-icon">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mem-qr-wa-number-body">
+                    <span class="mem-qr-wa-number-label"
+                      >WhatsApp Us After Payment</span
+                    >
+                    <a
+                      href="https://wa.me/918144918717"
+                      class="mem-qr-wa-number-value"
+                      >+91 81449 18717</a
+                    >
+                  </div>
+                </div>
+                <p class="mem-pay-note">
+                  📝 Add <strong>"Membership – [Your Name]"</strong> in the
+                  payment note
+                </p>
+
+                <div class="mem-divider"></div>
+
+                <!-- WhatsApp -->
+                <p class="mem-pay-label">STEP 3 — Confirm on WhatsApp</p>
+                <a
+                  href="https://wa.me/+918144918717?text=Hi%2C%20I%20have%20filled%20the%20membership%20form%20and%20completed%20the%20payment%20for%20PCDMT%20Foundation%20membership.%20Please%20find%20my%20screenshot%20attached."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-whatsapp mem-wa-btn"
+                  id="waConfirmBtn"
+                >
+                  💬 &nbsp;Share Payment Screenshot
+                </a>
+                <p class="mem-wa-note">
+                  We'll activate your membership and send your certificate
+                  within 24–48 hours.
+                </p>
+              </div>
+
+              <!-- Help box -->
+              <div class="mem-help-box reveal delay-3">
+                <p>🤔 <strong>Have questions?</strong></p>
+                <p
+                  style="
+                    font-size: 0.88rem;
+                    color: var(--gray-500);
+                    margin-top: 6px;
+                  "
+                >
+                  Call us at
+                  <a
+                    href="tel:+918144918717"
+                    style="color: var(--primary); font-weight: 600"
+                    >+91 81449 18717</a
+                  >
+                  or WhatsApp us anytime.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END MODE: MEMBERSHIP + DONATION -->
+
+        <!-- ===================== MODE: DONATION ONLY ===================== -->
+        <div id="mode-donate" class="mem-mode-panel">
+          <div class="donate-only-wrap reveal">
+            <div class="donate-only-left">
+              <div class="section-tag">Simple &amp; Secure</div>
+              <h2
+                class="section-title"
+                style="font-size: clamp(1.7rem, 3.5vw, 2.4rem)"
+              >
+                Make a Donation
+              </h2>
+              <p
+                style="
+                  font-size: 1rem;
+                  color: var(--gray-500);
+                  line-height: 1.75;
+                  margin-bottom: 32px;
+                "
+              >
+                No registration needed. Scan the QR code, pay any amount, and
+                confirm via WhatsApp. Your generosity directly reaches those in
+                need.
+              </p>
+
+              <div class="donate-only-steps">
+                <div class="dos-step">
+                  <div class="dos-num">1</div>
+                  <div>
+                    <strong>Scan QR Code</strong>
+                    <p>Open any UPI app and scan the code to the right.</p>
+                  </div>
+                </div>
+                <div class="dos-step">
+                  <div class="dos-num">2</div>
+                  <div>
+                    <strong>Complete Payment</strong>
+                    <p>
+                      Enter your amount. Add your
+                      <strong>name in the note</strong> field.
+                    </p>
+                  </div>
+                </div>
+                <div class="dos-step">
+                  <div class="dos-num">3</div>
+                  <div>
+                    <strong>Share Screenshot</strong>
+                    <p>Send the payment screenshot to us on WhatsApp.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="donate-only-right">
+              <div
+                class="mem-payment-card"
+                style="max-width: 400px; margin: 0 auto"
+              >
+                <div
+                  class="mem-fee-banner"
+                  style="background: linear-gradient(135deg, #2563eb, #1d4ed8)"
+                >
+                  <div class="mem-fee-label">Any Amount You Choose</div>
+                  <div class="mem-fee-amount" style="font-size: 1.5rem">
+                    100% Transparent
+                  </div>
+                  <div class="mem-fee-note">
+                    Every rupee goes directly to the cause
+                  </div>
+                </div>
+
+                <p class="mem-pay-label" style="margin-top: 28px">
+                  Scan &amp; Pay via UPI
+                </p>
+                <div class="mem-qr-frame">
+                  <img
+                    src="images/pcdmt_qr_code.png"
+                    alt="PCDMT Foundation UPI QR Code"
+                    width="180"
+                    height="180"
+                  />
+                </div>
+                <div class="mem-qr-apps">
+                  <span>Google Pay</span><span>PhonePe</span><span>Paytm</span
+                  ><span>BHIM</span>
+                </div>
+                <div class="mem-qr-wa-number">
+                  <div class="mem-qr-wa-number-icon">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mem-qr-wa-number-body">
+                    <span class="mem-qr-wa-number-label"
+                      >WhatsApp Us After Payment</span
+                    >
+                    <a
+                      href="https://wa.me/918144918717"
+                      class="mem-qr-wa-number-value"
+                      >+91 81449 18717</a
+                    >
+                  </div>
+                </div>
+                <p class="mem-pay-note">
+                  📝 Add your <strong>full name</strong> in the payment note
+                </p>
+
+                <div class="mem-divider"></div>
+
+                <a
+                  href="https://wa.me/+918144918717?text=Hi%2C%20I%20have%20made%20a%20donation%20to%20PCDMT%20Foundation.%20Please%20find%20my%20payment%20screenshot%20attached."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-whatsapp mem-wa-btn"
+                >
+                  💬 &nbsp;Share Screenshot on WhatsApp
+                </a>
+                <p class="mem-wa-note">
+                  We'll acknowledge your donation within 24 hours.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END MODE: DONATION ONLY -->
+      </div>
+    </section>
+
+    <!-- ===== WHY BECOME A MEMBER ===== -->
+    <section class="mem-why-section">
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-tag">Why Join Us</div>
+          <h2 class="section-title">Benefits of Membership</h2>
+          <p class="section-subtitle">
+            Become more than a donor — become a part of our family and share in
+            every milestone we achieve together.
+          </p>
+        </div>
+
+        <div class="mem-why-grid">
+          <div class="mem-why-card reveal delay-1">
+            <div
+              class="mem-why-icon"
+              style="background: linear-gradient(135deg, #eff6ff, #dbeafe)"
+            >
+              📜
+            </div>
+            <h3>Official Certificate</h3>
+            <p>
+              Receive a personalised, digitally-signed membership certificate
+              recognising your commitment to our mission.
+            </p>
+          </div>
+          <div class="mem-why-card reveal delay-2">
+            <div
+              class="mem-why-icon"
+              style="background: linear-gradient(135deg, #f0fdf4, #dcfce7)"
+            >
+              🪪
+            </div>
+            <h3>Member ID Card</h3>
+            <p>
+              Get your official Pratap Chandra Das Memorial Trust member ID card
+              — a symbol of belonging to a community that cares.
+            </p>
+          </div>
+          <div class="mem-why-card reveal delay-3">
+            <div
+              class="mem-why-icon"
+              style="background: linear-gradient(135deg, #fef9ec, #fef3c7)"
+            >
+              📅
+            </div>
+            <h3>Event Invitations</h3>
+            <p>
+              Be the first to know about and attend our community events, Anand
+              Arana Seba gatherings, and annual meets.
+            </p>
+          </div>
+          <div class="mem-why-card reveal delay-1">
+            <div
+              class="mem-why-icon"
+              style="background: linear-gradient(135deg, #fff1f2, #ffe4e6)"
+            >
+              📊
+            </div>
+            <h3>Impact Reports</h3>
+            <p>
+              Receive exclusive annual reports showing exactly how your
+              contributions have transformed lives and communities.
+            </p>
+          </div>
+          <div class="mem-why-card reveal delay-2">
+            <div
+              class="mem-why-icon"
+              style="background: linear-gradient(135deg, #f5f3ff, #ede9fe)"
+            >
+              💬
+            </div>
+            <h3>Whatsapp Updates</h3>
+            <p>
+              Get real-time updates, photos, and stories directly from our
+              programs delivered to your inbox every month.
+            </p>
+          </div>
+          <div class="mem-why-card reveal delay-3">
+            <div
+              class="mem-why-icon"
+              style="background: linear-gradient(135deg, #ecfdf5, #d1fae5)"
+            >
+              🤝
+            </div>
+            <h3>Lifelong Community</h3>
+            <p>
+              Connect with like-minded individuals across India who believe in
+              building a more compassionate, equitable world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section style="background: var(--gray-50); padding: 100px 0">
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-tag">Got Questions?</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="mem-faq-grid">
+          <div class="mem-faq reveal delay-1">
+            <button class="mem-faq-q" onclick="toggleFaq(this)">
+              What is the membership fee? <span class="faq-arrow">▾</span>
+            </button>
+            <div class="mem-faq-a">
+              We offer flexible membership plans to suit every commitment level.
+              A <strong>first-time registration</strong> costs ₹1,000
+              (one-time). Recurring plans are available at
+              <strong>₹500/month</strong>, <strong>₹1,500/quarter</strong>, or
+              <strong>₹6,000/year</strong>. Each plan is available with or
+              without a membership kit (T-Shirt, Badge &amp; printed
+              Certificate). All plans include full membership privileges and
+              access to our community.
+            </div>
+          </div>
+          <div class="mem-faq reveal delay-2">
+            <button class="mem-faq-q" onclick="toggleFaq(this)">
+              Can I donate without becoming a member?
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="mem-faq-a">
+              Absolutely. Click "Donation Only" at the top of this page to make
+              a contribution without registering as a member.
+            </div>
+          </div>
+          <div class="mem-faq reveal delay-1">
+            <button class="mem-faq-q" onclick="toggleFaq(this)">
+              How long does membership activation take?
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="mem-faq-a">
+              After receiving your payment screenshot on WhatsApp, we activate
+              your membership and dispatch your certificate within 24–48 hours.
+            </div>
+          </div>
+          <div class="mem-faq reveal delay-2">
+            <button class="mem-faq-q" onclick="toggleFaq(this)">
+              Is my personal information secure?
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="mem-faq-a">
+              Yes. Your data is stored securely in our Google-encrypted member
+              registry and is never shared with any third party.
+            </div>
+          </div>
+          <div class="mem-faq reveal delay-1">
+            <button class="mem-faq-q" onclick="toggleFaq(this)">
+              Why is PAN/Aadhaar required? <span class="faq-arrow">▾</span>
+            </button>
+            <div class="mem-faq-a">
+              As a registered charitable trust, we maintain proper member
+              records for compliance. Your details are kept strictly
+              confidential.
+            </div>
+          </div>
+          <div class="mem-faq reveal delay-2">
+            <button class="mem-faq-q" onclick="toggleFaq(this)">
+              Can I donate more than the membership fee?
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="mem-faq-a">
+              Yes! You are welcome to pay any amount above your chosen plan
+              amount. The additional amount will be treated as a voluntary
+              donation towards our programs. Please mention it in your WhatsApp
+              message.
+            </div>
+          </div>
+          <div class="mem-faq reveal delay-1">
+            <button class="mem-faq-q" onclick="toggleFaq(this)">
+              When can my membership be cancelled or revoked?
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="mem-faq-a">
+              Membership at PCDMT is a privilege built on trust, respect, and a
+              shared commitment to our mission. Membership
+              <strong>may be cancelled or revoked</strong> under the following
+              circumstances: <strong>non-payment</strong> of the applicable
+              membership fee within the due period; disrespectful or
+              inappropriate behaviour towards fellow members, beneficiaries, or
+              the public; failure to fulfil responsibilities assigned as part of
+              their membership role; or any action that is contrary to the
+              values, integrity, or reputation of Pratap Chandra Das Memorial
+              Trust. Such decisions are made thoughtfully and communicated
+              formally by the trust leadership.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <!-- Top accent line -->
+      <div class="footer-top-bar"></div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo-link">
+              <img
+                src="images/pcdmt_transparent_bg_logo.png"
+                alt="Pratap Chandra Das Memorial Trust"
+                class="footer-logo-img"
+              />
+            </a>
+            <p class="footer-brand-desc">
+              A charitable trust committed to empowering communities through
+              food, elder care, and emergency aid. Serving India since 2025.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/share17rUGxSgM1/?mibextid=wwXlfr"
+                class="social-link social-fb"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/pcdmt_2025/?hl=en#"
+                class="social-link social-ig"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram @pcdmt_2025"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a
+                href="https://whatsapp.com/channel/0029VbCTvtfFHWqAD6LrUH38"
+                class="social-link social-wa"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Channel"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/@pcdmt"
+                class="social-link social-yt"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="work.html">Our Work</a></li>
+              <li><a href="membership.html">Membership</a></li>
+              <li><a href="membership.html#donate">Donate</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Our Programs</h4>
+            <ul>
+              <li><a href="anand-arna-seba.html">Anand Arna Seba</a></li>
+              <li><a href="sanman-seba.html">Sanman Seba</a></li>
+              <li>
+                <a href="jiban-rakhshya-seba.html">Jiban Rakhshya Seba</a>
+              </li>
+              <li><a href="blanket-distribution.html">Abasyak Seba</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get in Touch</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <span class="footer-contact-icon"
+                  ><svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.47 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"
+                    /></svg
+                ></span>
+                <a href="tel:+918144918717">+91 81449 18717</a>
+              </li>
+              <li>
+                <span class="footer-contact-icon"
+                  ><svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" /></svg
+                ></span>
+                <a
+                  href="mailto:pratapchandradasmemorialtrust@gmail.com"
+                  class="footer-email-link"
+                  >pratapchandradasmemorialtrust<wbr />@gmail.com</a
+                >
+              </li>
+              <li>
+                <span class="footer-contact-icon"
+                  ><svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                    /></svg
+                ></span>
+                <a
+                  href="https://whatsapp.com/channel/0029VbCTvtfFHWqAD6LrUH38"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp Channel</a
+                >
+              </li>
+              <li>
+                <span class="footer-contact-icon"
+                  ><svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg
+                ></span>
+                <a
+                  href="https://www.instagram.com/pcdmt_2025/?hl=en#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >@pcdmt_2025</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer bottom bar -->
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Pratap Chandra Das Memorial Trust. All rights reserved.
+          </p>
+          <div class="footer-credit">
+            Made with <span class="footer-heart">&hearts;</span> by
+            <a
+              href="https://klypertechnology.com"
+              target="_blank"
+              rel="noopener"
+              >Klyper Technology</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+    <script src="js/membership.js" defer></script>
+  </body>
+</html>
