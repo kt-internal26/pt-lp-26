@@ -5989,6 +5989,7 @@ body:not(.has-hero-carousel) .nav-toggle span {
   margin: 0 -32px -26px;
   overflow: hidden;
   border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  overscroll-behavior: contain;
 }
 .gform-embed {
   display: block;
@@ -7831,8 +7832,17 @@ body:not(.has-hero-carousel) .nav-toggle span {
   .mem-why-grid { grid-template-columns: 1fr; }
   .mem-hero { padding: calc(var(--nav-height) + 40px) 0 48px; }
   .mem-form-card { padding: 24px 20px; }
-  .gform-embed-wrap { margin: 0 -20px -24px; }
-  .gform-embed { height: 1050px; }
+  /* Google Form: constrain height so users can scroll past it on mobile */
+  .gform-embed-wrap {
+    margin: 0 -20px 0;
+    height: 72vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  }
+  .gform-embed { height: 1300px; }
 }
 
 /* =============================================
@@ -7845,6 +7855,8 @@ body:not(.has-hero-carousel) .nav-toggle span {
   .mem-journey-line { width: 24px; }
   .mem-journey-step span { font-size: 0.7rem; }
   .mem-journey-dot { width: 28px; height: 28px; font-size: 0.78rem; }
+  /* Slightly taller form container on small phones */
+  .gform-embed-wrap { height: 78vh; }
 }
 
 /* =============================================
