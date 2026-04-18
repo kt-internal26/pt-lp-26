@@ -189,3 +189,36 @@ function _updatePaymentPanel() {
     waBtn.href = 'https://wa.me/+918144918717?text=' + encodeURIComponent(msg);
   }
 }
+
+/* --------------------------------------------------
+   Copy pay detail (phone / UPI ID) to clipboard
+-------------------------------------------------- */
+function copyPayText(text, btn) {
+  const span = btn.querySelector('span');
+
+  function showCopied() {
+    btn.classList.add('copied');
+    if (span) span.textContent = 'Copied!';
+    setTimeout(() => {
+      btn.classList.remove('copied');
+      if (span) span.textContent = 'Copy';
+    }, 2000);
+  }
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(showCopied).catch(() => fallbackCopy(text, showCopied));
+  } else {
+    fallbackCopy(text, showCopied);
+  }
+}
+
+function fallbackCopy(text, callback) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  try { document.execCommand('copy'); callback(); } catch (_) {}
+  document.body.removeChild(ta);
+}

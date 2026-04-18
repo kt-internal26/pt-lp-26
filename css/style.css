@@ -6256,6 +6256,109 @@ body:not(.has-hero-carousel) .nav-toggle span {
   color: var(--gray-500);
 }
 
+/* ── Pay Alternatives (PhonePe & UPI ID) ── */
+.mem-pay-alts {
+  margin: 4px 24px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.mem-pay-alt-or {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  color: var(--gray-400);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.mem-pay-alt-or::before,
+.mem-pay-alt-or::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--gray-200);
+}
+.mem-pay-alt-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.mem-pay-alt-row:hover {
+  border-color: var(--primary-border);
+  box-shadow: var(--shadow-sm);
+}
+.mem-pay-alt-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.mem-pay-alt-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.mem-pay-alt-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+}
+.mem-pay-alt-value-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.mem-pay-alt-value {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}
+.mem-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-full);
+  background: var(--white);
+  color: var(--gray-500);
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+  flex-shrink: 0;
+  line-height: 1.5;
+}
+.mem-copy-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-light);
+}
+.mem-copy-btn.copied {
+  border-color: var(--success);
+  color: var(--success);
+  background: var(--success-light);
+}
+
 /* WhatsApp number display below QR */
 .mem-qr-wa-number {
   display: flex;
