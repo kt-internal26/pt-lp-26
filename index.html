@@ -16,7 +16,9 @@
       property="og:description"
       content="Join thousands of donors helping underprivileged communities through education, healthcare, and sustainable development."
     />
-    <title>Pratap Chandra Das Memorial Trust — Empowering Lives Through Compassion</title>
+    <title>
+      Pratap Chandra Das Memorial Trust — Empowering Lives Through Compassion
+    </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,6 +26,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CG6XLDPHSB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CG6XLDPHSB");
+    </script>
   </head>
   <body class="has-hero-carousel">
     <!-- Scroll progress indicator -->
@@ -33,25 +49,59 @@
       <div class="nav-inner">
         <a href="index.html" class="nav-logo">
           <!-- Full logo — visible at top of hero -->
-          <img src="images/pcdmt_transparent_bg_logo.png" alt="Pratap Chandra Das Memorial Trust" class="nav-logo-img nav-logo-full" />
+          <img
+            src="images/pcdmt_transparent_bg_logo.png"
+            alt="Pratap Chandra Das Memorial Trust"
+            class="nav-logo-img nav-logo-full"
+          />
           <!-- Small logo — fades in on scroll -->
-          <img src="images/pcdmt_logo_small.png" alt="PCDMT" class="nav-logo-img nav-logo-small" />
+          <img
+            src="images/pcdmt_logo_small.png"
+            alt="PCDMT"
+            class="nav-logo-img nav-logo-small"
+          />
         </a>
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html" class="active">Home</a></li>
           <li class="nav-item-dropdown">
-            <a href="#" role="button" aria-haspopup="true">About
-              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            <a href="#" role="button" aria-haspopup="true"
+              >About
+              <svg
+                class="nav-chevron"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
             </a>
             <ul class="nav-dropdown">
-              <li><a href="about-founder.html" class="nav-dropdown-link"><span class="nav-dropdown-icon" style="background:#fff7ed;">🙏</span>About Founder</a></li>
-              <li><a href="about-organization.html" class="nav-dropdown-link"><span class="nav-dropdown-icon" style="background:#eff6ff;">🏛️</span>About Organization</a></li>
+              <li>
+                <a href="about-founder.html" class="nav-dropdown-link"
+                  ><span class="nav-dropdown-icon" style="background: #fff7ed"
+                    >🙏</span
+                  >About Founder</a
+                >
+              </li>
+              <li>
+                <a href="about-organization.html" class="nav-dropdown-link"
+                  ><span class="nav-dropdown-icon" style="background: #eff6ff"
+                    >🏛️</span
+                  >About Organization</a
+                >
+              </li>
             </ul>
           </li>
           <li><a href="work.html">Our Work</a></li>
           <li><a href="membership.html">Membership</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="membership.html#donate" class="btn-nav">Donate Now</a></li>
+          <li>
+            <a href="membership.html#donate" class="btn-nav">Donate Now</a>
+          </li>
         </ul>
         <button
           class="nav-toggle"
@@ -67,12 +117,26 @@
 
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
-
       <!-- Background Carousel -->
       <div class="hero-carousel" id="heroCarousel">
-        <div class="hero-slide active" style="background-image:url('images/work_images/hero_section_1.webp')"></div>
-        <div class="hero-slide"        style="background-image:url('images/work_images/hero_2.webp')"></div>
-        <div class="hero-slide"        style="background-image:url('images/work_images/hero_3.webp')"></div>
+        <div
+          class="hero-slide active"
+          style="
+            background-image: url(&quot;images/work_images/hero_section_1.webp&quot;);
+          "
+        ></div>
+        <div
+          class="hero-slide"
+          style="
+            background-image: url(&quot;images/work_images/hero_2.webp&quot;);
+          "
+        ></div>
+        <div
+          class="hero-slide"
+          style="
+            background-image: url(&quot;images/work_images/hero_3.webp&quot;);
+          "
+        ></div>
       </div>
 
       <!-- Dark gradient overlay -->
@@ -83,7 +147,8 @@
         <div class="container">
           <div class="hero-inner">
             <h1 class="hero-title animate-fade-up delay-1">
-              <span class="hero-tribute">A Tribute</span> <span class="highlight">in Action</span>
+              <span class="hero-tribute">A Tribute</span>
+              <span class="highlight">in Action</span>
             </h1>
 
             <div class="hero-founder-row animate-fade-up delay-2">
@@ -96,35 +161,59 @@
               </div>
               <div class="hero-founder-text">
                 <p class="hero-subtitle">
-                  <span class="hero-name-highlight">PRATAP CHANDRA DAS MEMORIAL TRUST</span>
-                  serves communities with a devoted heart &mdash; providing free meals twice
-                  every month, distributing warm blankets to those in need, extending aid
-                  to the injured, and honouring our elders with dignity and respectful
-                  care, across the communities we serve.
+                  <span class="hero-name-highlight"
+                    >PRATAP CHANDRA DAS MEMORIAL TRUST</span
+                  >
+                  serves communities with a devoted heart &mdash; providing free
+                  meals twice every month, distributing warm blankets to those
+                  in need, extending aid to the injured, and honouring our
+                  elders with dignity and respectful care, across the
+                  communities we serve.
                 </p>
 
                 <div class="hero-actions">
-                  <a href="membership.html#donate" class="btn btn-primary btn-lg">❤️&nbsp; Donate Now</a>
-                  <a href="work.html" class="btn btn-ghost-white btn-lg">Our Mission</a>
+                  <a
+                    href="membership.html#donate"
+                    class="btn btn-primary btn-lg"
+                    >❤️&nbsp; Donate Now</a
+                  >
+                  <a href="work.html" class="btn btn-ghost-white btn-lg"
+                    >Our Mission</a
+                  >
                 </div>
               </div>
 
               <!-- QR Code — right-aligned, secondary CTA -->
               <div class="hero-qr-wrap animate-fade-up delay-3">
-                <img src="images/pcdmt_qr_code.png" alt="Donate via UPI QR code" class="hero-qr-img" />
+                <img
+                  src="images/pcdmt_qr_code.png"
+                  alt="Donate via UPI QR code"
+                  class="hero-qr-img"
+                />
                 <span class="hero-qr-label">Support via UPI</span>
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
       <!-- Carousel dot navigation -->
       <div class="carousel-nav" id="carouselNav">
-        <button class="carousel-dot active" data-index="0" aria-label="Slide 1"></button>
-        <button class="carousel-dot"        data-index="1" aria-label="Slide 2"></button>
-        <button class="carousel-dot"        data-index="2" aria-label="Slide 3"></button>
+        <button
+          class="carousel-dot active"
+          data-index="0"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          class="carousel-dot"
+          data-index="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          class="carousel-dot"
+          data-index="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
 
       <!-- Scroll indicator -->
@@ -132,46 +221,84 @@
         <span>Discover Our Mission</span>
         <div class="scroll-chevron"></div>
       </div>
-
     </section>
 
-        <!-- ===== ABOUT PREVIEW ===== -->
+    <!-- ===== ABOUT PREVIEW ===== -->
     <section class="about-preview">
       <div class="container">
         <div class="about-grid">
           <div class="about-visual reveal-up">
-
             <!-- About section image carousel -->
             <div class="about-carousel" id="aboutCarousel">
               <div class="about-carousel-track" id="aboutTrack">
                 <div class="about-carousel-slide active">
-                  <img src="images/work_images/img_8.webp" alt="Community outreach" loading="lazy" />
+                  <img
+                    src="images/work_images/img_8.webp"
+                    alt="Community outreach"
+                    loading="lazy"
+                  />
                   <div class="about-slide-overlay"></div>
                 </div>
                 <div class="about-carousel-slide">
-                  <img src="images/work_images/img_11.webp" alt="Livelihood support" loading="lazy" />
+                  <img
+                    src="images/work_images/img_11.webp"
+                    alt="Livelihood support"
+                    loading="lazy"
+                  />
                   <div class="about-slide-overlay"></div>
                 </div>
                 <div class="about-carousel-slide">
-                  <img src="images/work_images/img_9.webp" alt="Healthcare initiative" loading="lazy" />
+                  <img
+                    src="images/work_images/img_9.webp"
+                    alt="Healthcare initiative"
+                    loading="lazy"
+                  />
                   <div class="about-slide-overlay"></div>
                 </div>
                 <div class="about-carousel-slide">
-                  <img src="images/work_images/img_10.webp" alt="Community meal" loading="lazy" />
+                  <img
+                    src="images/work_images/img_10.webp"
+                    alt="Community meal"
+                    loading="lazy"
+                  />
                   <div class="about-slide-overlay"></div>
                 </div>
                 <div class="about-carousel-slide">
-                  <img src="images/work_images/sanman_seba.webp" alt="Sanman Seba" loading="lazy" />
+                  <img
+                    src="images/work_images/sanman_seba.webp"
+                    alt="Sanman Seba"
+                    loading="lazy"
+                  />
                   <div class="about-slide-overlay"></div>
                 </div>
               </div>
               <!-- Dot navigation -->
               <div class="about-carousel-nav" id="aboutCarouselNav">
-                <button class="about-carousel-dot active" data-index="0" aria-label="Slide 1"></button>
-                <button class="about-carousel-dot" data-index="1" aria-label="Slide 2"></button>
-                <button class="about-carousel-dot" data-index="2" aria-label="Slide 3"></button>
-                <button class="about-carousel-dot" data-index="3" aria-label="Slide 4"></button>
-                <button class="about-carousel-dot" data-index="4" aria-label="Slide 5"></button>
+                <button
+                  class="about-carousel-dot active"
+                  data-index="0"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  class="about-carousel-dot"
+                  data-index="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  class="about-carousel-dot"
+                  data-index="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  class="about-carousel-dot"
+                  data-index="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  class="about-carousel-dot"
+                  data-index="4"
+                  aria-label="Slide 5"
+                ></button>
               </div>
               <!-- Progress bar -->
               <div class="about-carousel-progress">
@@ -190,9 +317,10 @@
               Rooted in Purpose,<br />Driven by People
             </h2>
             <p class="section-subtitle">
-              Founded in 2025, Pratap Chandra Das Memorial Trust was born from the conviction
-              that compassion — when organised — can move mountains. We work
-              with integrity and urgency to create lasting, meaningful change.
+              Founded in 2025, Pratap Chandra Das Memorial Trust was born from
+              the conviction that compassion — when organised — can move
+              mountains. We work with integrity and urgency to create lasting,
+              meaningful change.
             </p>
 
             <div class="features-list">
@@ -202,7 +330,8 @@
                   <h4>ANAND ARNA SEBA</h4>
                   <p>
                     Providing food and essential support to the needy on the
-                    <strong>6th &amp; 26th of every month</strong>, with compassion and dignity.
+                    <strong>6th &amp; 26th of every month</strong>, with
+                    compassion and dignity.
                   </p>
                 </div>
               </div>
@@ -211,8 +340,9 @@
                 <div>
                   <h4>SANMAN SEBA</h4>
                   <p>
-                    Honouring and supporting elders with care and respect, ensuring their
-    well-being and dignity through compassionate assistance and regular outreach.
+                    Honouring and supporting elders with care and respect,
+                    ensuring their well-being and dignity through compassionate
+                    assistance and regular outreach.
                   </p>
                 </div>
               </div>
@@ -221,14 +351,17 @@
                 <div>
                   <h4>JIBAN RAKHSHYA SEBA</h4>
                   <p>
-                    Extending timely aid to the injured and vulnerable by providing essential
-    medical support and emergency assistance to help save and protect lives.
+                    Extending timely aid to the injured and vulnerable by
+                    providing essential medical support and emergency assistance
+                    to help save and protect lives.
                   </p>
                 </div>
               </div>
             </div>
 
-            <a href="work.html" class="btn btn-primary reveal-up delay-5">Discover Our Work →</a>
+            <a href="work.html" class="btn btn-primary reveal-up delay-5"
+              >Discover Our Work →</a
+            >
           </div>
         </div>
       </div>
@@ -238,7 +371,6 @@
     <section class="founder-section">
       <div class="container">
         <div class="founder-grid">
-
           <!-- Founder image -->
           <div class="founder-img-col reveal-up">
             <div class="founder-img-frame">
@@ -257,18 +389,24 @@
             <div class="section-tag-light">A Word From Our Founder</div>
             <span class="founder-quote-glyph">&ldquo;</span>
             <p class="founder-quote">
-              Compassion is not a luxury — it is the very foundation of a just society.
-              Every person who goes to bed hungry, every elder who is forgotten, every life
-              left unattended — these are not strangers. They are our own.
-              <em>When we serve them, we serve something far greater than ourselves.</em>
-              Let this trust be a living testament that ordinary people, acting together
-              with love, can create extraordinary change.
+              Compassion is not a luxury — it is the very foundation of a just
+              society. Every person who goes to bed hungry, every elder who is
+              forgotten, every life left unattended — these are not strangers.
+              They are our own.
+              <em
+                >When we serve them, we serve something far greater than
+                ourselves.</em
+              >
+              Let this trust be a living testament that ordinary people, acting
+              together with love, can create extraordinary change.
             </p>
             <div class="founder-divider"></div>
             <div class="founder-signature">
               <div>
                 <div class="founder-name">Srikrushna Kumar Das</div>
-                <div class="founder-role">Founder &middot; PRATAP CHANDRA DAS MEMORIAL TRUST</div>
+                <div class="founder-role">
+                  Founder &middot; PRATAP CHANDRA DAS MEMORIAL TRUST
+                </div>
               </div>
               <div class="founder-trust-pill">
                 <div class="founder-trust-item">
@@ -281,13 +419,16 @@
                 </div>
               </div>
             </div>
-            <a href="about-founder.html" class="btn btn-outline" style="margin-top:28px;">More about Founder →</a>
+            <a
+              href="about-founder.html"
+              class="btn btn-outline"
+              style="margin-top: 28px"
+              >More about Founder →</a
+            >
           </div>
-
         </div>
       </div>
     </section>
-
 
     <!-- ===== FOUNDER'S FATHER TRIBUTE ===== -->
     <section class="tribute-section">
@@ -297,7 +438,6 @@
 
       <div class="container">
         <div class="tribute-grid">
-
           <!-- Image column -->
           <div class="tribute-img-col reveal-up">
             <div class="tribute-img-frame">
@@ -318,11 +458,14 @@
             <span class="tribute-quote-glyph">&ldquo;</span>
 
             <blockquote class="tribute-quote">
-              A life lived in service to others is the only life truly worth living.
-              Do not wait for a grand moment to show kindness — the smallest act of
-              compassion, offered with a full heart, can change the entire course of
-              someone's life.
-              <em>Give freely, love deeply, and leave this world a little warmer than you found it.</em>
+              A life lived in service to others is the only life truly worth
+              living. Do not wait for a grand moment to show kindness — the
+              smallest act of compassion, offered with a full heart, can change
+              the entire course of someone's life.
+              <em
+                >Give freely, love deeply, and leave this world a little warmer
+                than you found it.</em
+              >
             </blockquote>
 
             <div class="tribute-divider"></div>
@@ -330,10 +473,13 @@
             <div class="tribute-signature">
               <div class="tribute-sig-info">
                 <div class="tribute-sig-name">Pratap Chandra Das</div>
-                <div class="tribute-sig-role">The Guiding Light &middot; Father of our Founder</div>
+                <div class="tribute-sig-role">
+                  The Guiding Light &middot; Father of our Founder
+                </div>
                 <div class="tribute-sig-note">
-                  His life, his values, and his boundless love for humanity are the very foundation
-                  upon which this trust was built. Every act of service we perform is a tribute to him.
+                  His life, his values, and his boundless love for humanity are
+                  the very foundation upon which this trust was built. Every act
+                  of service we perform is a tribute to him.
                 </div>
               </div>
             </div>
@@ -354,13 +500,15 @@
               </div>
             </div>
 
-            <a href="about-organization.html" class="btn btn-primary tribute-cta-btn">Learn About Our Organization →</a>
+            <a
+              href="about-organization.html"
+              class="btn btn-primary tribute-cta-btn"
+              >Learn About Our Organization →</a
+            >
           </div>
-
         </div>
       </div>
     </section>
-
 
     <!-- ===== PROGRAMS PREVIEW ===== -->
     <section class="programs-preview">
@@ -374,99 +522,145 @@
           </p>
         </div>
         <div class="programs-grid">
-
           <!-- Card 1 — Anand Arna Seba -->
           <div class="program-card reveal delay-1">
             <div class="program-card-image">
-              <img src="images/work_images/anand_arna_seba.webp" alt="Anand Arna Seba — free meals programme" loading="lazy" />
+              <img
+                src="images/work_images/anand_arna_seba.webp"
+                alt="Anand Arna Seba — free meals programme"
+                loading="lazy"
+              />
               <div class="program-card-img-overlay"></div>
               <span class="program-badge">🍲 Food &amp; Nutrition</span>
             </div>
             <div class="program-card-body">
               <h3>ANAND ARNA SEBA</h3>
-              <p>Hot meals &amp; essential provisions for vulnerable families — held every <strong>6th &amp; 26th</strong> of the month with compassion and dignity.</p>
+              <p>
+                Hot meals &amp; essential provisions for vulnerable families —
+                held every <strong>6th &amp; 26th</strong> of the month with
+                compassion and dignity.
+              </p>
               <div class="program-stat">
-                <span class="prog-stat-item"><span class="prog-num">500+</span> meals served</span>
+                <span class="prog-stat-item"
+                  ><span class="prog-num">500+</span> meals served</span
+                >
                 <span class="prog-stat-sep">·</span>
                 <span class="prog-stat-item">Twice monthly</span>
               </div>
             </div>
-            <a href="work.html" class="program-link">View Program <span class="arrow">→</span></a>
+            <a href="work.html" class="program-link"
+              >View Program <span class="arrow">→</span></a
+            >
           </div>
 
           <!-- Card 2 — Sanman Seba -->
           <div class="program-card reveal delay-2">
             <div class="program-card-image">
-              <img src="images/work_images/sanman_seba.webp" alt="Sanman Seba — elder care programme" loading="lazy" />
+              <img
+                src="images/work_images/sanman_seba.webp"
+                alt="Sanman Seba — elder care programme"
+                loading="lazy"
+              />
               <div class="program-card-img-overlay"></div>
               <span class="program-badge">🙏 Elder Care</span>
             </div>
             <div class="program-card-body">
               <h3>SANMAN SEBA</h3>
-              <p>Honouring and supporting elders with care and respect, ensuring well-being and dignity through compassionate assistance and regular outreach.</p>
+              <p>
+                Honouring and supporting elders with care and respect, ensuring
+                well-being and dignity through compassionate assistance and
+                regular outreach.
+              </p>
               <div class="program-stat">
-                <span class="prog-stat-item"><span class="prog-num">200+</span> elders supported</span>
+                <span class="prog-stat-item"
+                  ><span class="prog-num">200+</span> elders supported</span
+                >
                 <span class="prog-stat-sep">·</span>
                 <span class="prog-stat-item">Regular outreach</span>
               </div>
             </div>
-            <a href="work.html" class="program-link">View Program <span class="arrow">→</span></a>
+            <a href="work.html" class="program-link"
+              >View Program <span class="arrow">→</span></a
+            >
           </div>
 
           <!-- Card 3 — Jiban Rakhshya Seba -->
           <div class="program-card reveal delay-3">
             <div class="program-card-image">
-              <img src="images/work_images/jiban_rakhsya_seba/jiban_rakhsya_seba_cover_img.webp" alt="Jiban Rakhshya Seba — emergency aid programme" loading="lazy" />
+              <img
+                src="images/work_images/jiban_rakhsya_seba/jiban_rakhsya_seba_cover_img.webp"
+                alt="Jiban Rakhshya Seba — emergency aid programme"
+                loading="lazy"
+              />
               <div class="program-card-img-overlay"></div>
               <span class="program-badge">🩺 Emergency Aid</span>
             </div>
             <div class="program-card-body">
               <h3>JIBAN RAKHSHYA SEBA</h3>
-              <p>Extending timely aid to the injured and vulnerable — providing essential medical support and emergency assistance to save and protect lives.</p>
+              <p>
+                Extending timely aid to the injured and vulnerable — providing
+                essential medical support and emergency assistance to save and
+                protect lives.
+              </p>
               <div class="program-stat">
-                <span class="prog-stat-item"><span class="prog-num">80+</span> lives aided</span>
+                <span class="prog-stat-item"
+                  ><span class="prog-num">80+</span> lives aided</span
+                >
                 <span class="prog-stat-sep">·</span>
                 <span class="prog-stat-item">Emergency response</span>
               </div>
             </div>
-            <a href="jiban-rakhshya-seba.html" class="program-link">View Program <span class="arrow">→</span></a>
+            <a href="jiban-rakhshya-seba.html" class="program-link"
+              >View Program <span class="arrow">→</span></a
+            >
           </div>
-
         </div>
-        <div class="text-center" style="margin-top:48px">
-          <a href="work.html" class="btn btn-outline btn-lg">See All Our Work →</a>
+        <div class="text-center" style="margin-top: 48px">
+          <a href="work.html" class="btn btn-outline btn-lg"
+            >See All Our Work →</a
+          >
         </div>
       </div>
     </section>
 
-     <!-- ===== IMPACT STATS ===== -->
+    <!-- ===== IMPACT STATS ===== -->
     <section class="stats-bar" id="statsSection">
       <div class="stats-bg-image"></div>
       <div class="stats-overlay"></div>
       <div class="container">
         <div class="stats-header reveal">
           <div class="section-tag-light">Our Impact</div>
-          <h2 class="stats-section-title">Numbers That Tell <span>Our Story</span></h2>
+          <h2 class="stats-section-title">
+            Numbers That Tell <span>Our Story</span>
+          </h2>
         </div>
         <div class="stats-grid">
           <div class="stat-item reveal">
             <div class="stat-icon-wrap">🤝</div>
-            <div class="stat-value" data-target="10000">0<span class="accent">+</span></div>
+            <div class="stat-value" data-target="10000">
+              0<span class="accent">+</span>
+            </div>
             <div class="stat-desc">Lives Impacted</div>
           </div>
           <div class="stat-item reveal delay-1">
             <div class="stat-icon-wrap">🏗️</div>
-            <div class="stat-value" data-target="25">0<span class="accent">+</span></div>
+            <div class="stat-value" data-target="25">
+              0<span class="accent">+</span>
+            </div>
             <div class="stat-desc">Events Held</div>
           </div>
           <div class="stat-item reveal delay-2">
             <div class="stat-icon-wrap">💛</div>
-            <div class="stat-value" data-target="500">0<span class="accent">+</span></div>
+            <div class="stat-value" data-target="500">
+              0<span class="accent">+</span>
+            </div>
             <div class="stat-desc">Generous Donors</div>
           </div>
           <div class="stat-item reveal delay-3">
             <div class="stat-icon-wrap">🍲</div>
-            <div class="stat-value" data-target="1000">0<span class="accent">+</span></div>
+            <div class="stat-value" data-target="1000">
+              0<span class="accent">+</span>
+            </div>
             <div class="stat-desc">Meals Served</div>
           </div>
         </div>
@@ -487,9 +681,18 @@
         <div class="testimonials-grid">
           <div class="testimonial-card reveal delay-1">
             <div class="quote-mark">&ldquo;</div>
-            <p class="t-text">The daily meal programme has been a lifeline for our family. We no longer worry about going to bed hungry. Pratap Chandra Das Memorial Trust gave us back our dignity.</p>
+            <p class="t-text">
+              The daily meal programme has been a lifeline for our family. We no
+              longer worry about going to bed hungry. Pratap Chandra Das
+              Memorial Trust gave us back our dignity.
+            </p>
             <div class="t-author">
-              <div class="t-avatar" style="background:linear-gradient(135deg,#F59E0B,#FBBF24)">R</div>
+              <div
+                class="t-avatar"
+                style="background: linear-gradient(135deg, #f59e0b, #fbbf24)"
+              >
+                R
+              </div>
               <div class="t-info">
                 <div class="t-name">Ranjita D.</div>
                 <div class="t-role">Beneficiary · Odisha</div>
@@ -499,9 +702,18 @@
           </div>
           <div class="testimonial-card reveal delay-2">
             <div class="quote-mark">&ldquo;</div>
-            <p class="t-text">I donated ₹500 and was moved by the transparency. I received a WhatsApp confirmation and a photo of real impact within hours. That kind of trust is rare.</p>
+            <p class="t-text">
+              I donated ₹500 and was moved by the transparency. I received a
+              WhatsApp confirmation and a photo of real impact within hours.
+              That kind of trust is rare.
+            </p>
             <div class="t-author">
-              <div class="t-avatar" style="background:linear-gradient(135deg,#2563EB,#0EA5E9)">A</div>
+              <div
+                class="t-avatar"
+                style="background: linear-gradient(135deg, #2563eb, #0ea5e9)"
+              >
+                A
+              </div>
               <div class="t-info">
                 <div class="t-name">Amit S.</div>
                 <div class="t-role">Donor · Bengaluru</div>
@@ -511,9 +723,18 @@
           </div>
           <div class="testimonial-card reveal delay-3">
             <div class="quote-mark">&ldquo;</div>
-            <p class="t-text">The free health camp reached our village — over 300 people received check-ups and medicines at no cost. For us, this foundation is a true blessing.</p>
+            <p class="t-text">
+              The free health camp reached our village — over 300 people
+              received check-ups and medicines at no cost. For us, this
+              foundation is a true blessing.
+            </p>
             <div class="t-author">
-              <div class="t-avatar" style="background:linear-gradient(135deg,#10B981,#34D399)">M</div>
+              <div
+                class="t-avatar"
+                style="background: linear-gradient(135deg, #10b981, #34d399)"
+              >
+                M
+              </div>
               <div class="t-info">
                 <div class="t-name">Meena T.</div>
                 <div class="t-role">Resident · Rural Odisha</div>
@@ -543,9 +764,16 @@
               <span class="step-icon">📷</span>
             </div>
             <h3>Scan QR Code</h3>
-            <p>Use any UPI app to scan our secure QR and enter your donation amount.</p>
+            <p>
+              Use any UPI app to scan our secure QR and enter your donation
+              amount.
+            </p>
             <div class="step-qr-wrap">
-              <img src="images/pcdmt_qr_code.png" alt="UPI Donation QR Code — PCDMT" class="step-qr-img" />
+              <img
+                src="images/pcdmt_qr_code.png"
+                alt="UPI Donation QR Code — PCDMT"
+                class="step-qr-img"
+              />
               <span class="step-qr-label">Scan to Donate via UPI</span>
             </div>
             <div class="step-upi-row">
@@ -556,7 +784,15 @@
             <div class="step-connector">
               <svg viewBox="0 0 40 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 8 Q20 2 38 8" />
-                <path d="M32 5 L38 8 L32 11" stroke-dasharray="none" fill="none" stroke="rgba(63,129,239,0.55)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M32 5 L38 8 L32 11"
+                  stroke-dasharray="none"
+                  fill="none"
+                  stroke="rgba(63,129,239,0.55)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
             </div>
           </div>
@@ -566,11 +802,22 @@
               <span class="step-icon">💸</span>
             </div>
             <h3>Complete Payment</h3>
-            <p>Add your name in the payment note and complete the secure UPI transaction in seconds.</p>
+            <p>
+              Add your name in the payment note and complete the secure UPI
+              transaction in seconds.
+            </p>
             <div class="step-connector">
               <svg viewBox="0 0 40 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 8 Q20 2 38 8" />
-                <path d="M32 5 L38 8 L32 11" stroke-dasharray="none" fill="none" stroke="rgba(63,129,239,0.55)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M32 5 L38 8 L32 11"
+                  stroke-dasharray="none"
+                  fill="none"
+                  stroke="rgba(63,129,239,0.55)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
             </div>
           </div>
@@ -580,10 +827,27 @@
               <span class="step-icon">✅</span>
             </div>
             <h3>Share Screenshot</h3>
-            <p>Send the payment screenshot on WhatsApp. We'll acknowledge and send your donation receipt.</p>
+            <p>
+              Send the payment screenshot on WhatsApp. We'll acknowledge and
+              send your donation receipt.
+            </p>
             <div class="step-wa-block">
-              <a href="https://wa.me/918144918717" class="step-wa-link" target="_blank" rel="noopener noreferrer">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              <a
+                href="https://wa.me/918144918717"
+                class="step-wa-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                  />
+                </svg>
                 +91 81449 18717
               </a>
               <span class="step-wa-note">Receipt sent within minutes</span>
@@ -591,7 +855,9 @@
           </div>
         </div>
         <div class="text-center" style="margin-top: 22px">
-          <a href="membership.html#donate" class="btn btn-primary btn-lg">Donate Now →</a>
+          <a href="membership.html#donate" class="btn btn-primary btn-lg"
+            >Donate Now →</a
+          >
         </div>
       </div>
     </section>
@@ -604,7 +870,6 @@
 
       <div class="container">
         <div class="cta-inner reveal">
-
           <!-- Trust signal strip -->
           <div class="cta-trust-row">
             <div class="cta-trust-item">
@@ -631,12 +896,15 @@
           </h2>
           <p class="cta-subtitle">
             Pratap Chandra Das Memorial Trust runs entirely on the generosity of
-            people like you. A small contribution feeds a family, honours an elder,
-            or reaches someone in an emergency — today.
+            people like you. A small contribution feeds a family, honours an
+            elder, or reaches someone in an emergency — today.
           </p>
 
           <div class="cta-buttons">
-            <a href="membership.html#donate" class="btn btn-white btn-lg cta-btn-primary">
+            <a
+              href="membership.html#donate"
+              class="btn btn-white btn-lg cta-btn-primary"
+            >
               ❤️&nbsp; Donate Now
             </a>
             <a href="about.html" class="btn btn-ghost-white btn-lg">
@@ -644,7 +912,10 @@
             </a>
           </div>
 
-          <p class="cta-note">No registration needed &nbsp;·&nbsp; UPI &amp; bank transfer accepted &nbsp;·&nbsp; Receipt on WhatsApp</p>
+          <p class="cta-note">
+            No registration needed &nbsp;·&nbsp; UPI &amp; bank transfer
+            accepted &nbsp;·&nbsp; Receipt on WhatsApp
+          </p>
         </div>
       </div>
     </section>
@@ -656,11 +927,14 @@
 
       <div class="container">
         <div class="footer-grid">
-
           <!-- Brand column -->
           <div class="footer-brand">
             <a href="index.html" class="footer-logo-link">
-              <img src="images/pcdmt_transparent_bg_logo.png" alt="Pratap Chandra Das Memorial Trust" class="footer-logo-img" />
+              <img
+                src="images/pcdmt_transparent_bg_logo.png"
+                alt="Pratap Chandra Das Memorial Trust"
+                class="footer-logo-img"
+              />
             </a>
             <p class="footer-brand-desc">
               A charitable trust committed to empowering communities through
@@ -668,29 +942,81 @@
             </p>
             <!-- Social icons -->
             <div class="footer-social">
-              <a href="https://www.facebook.com/share17rUGxSgM1/?mibextid=wwXlfr"
-                 class="social-link social-fb"
-                 target="_blank" rel="noopener noreferrer"
-                 aria-label="Facebook — Pratap Chandra Das Memorial Trust">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              <a
+                href="https://www.facebook.com/share17rUGxSgM1/?mibextid=wwXlfr"
+                class="social-link social-fb"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook — Pratap Chandra Das Memorial Trust"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
               </a>
-              <a href="https://www.instagram.com/pcdmt_2025/?hl=en#"
-                 class="social-link social-ig"
-                 target="_blank" rel="noopener noreferrer"
-                 aria-label="Instagram @pcdmt_2025">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <a
+                href="https://www.instagram.com/pcdmt_2025/?hl=en#"
+                class="social-link social-ig"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram @pcdmt_2025"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
               </a>
-              <a href="https://whatsapp.com/channel/0029VbCTvtfFHWqAD6LrUH38"
-                 class="social-link social-wa"
-                 target="_blank" rel="noopener noreferrer"
-                 aria-label="WhatsApp Channel">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              <a
+                href="https://whatsapp.com/channel/0029VbCTvtfFHWqAD6LrUH38"
+                class="social-link social-wa"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Channel"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                  />
+                </svg>
               </a>
-              <a href="https://www.youtube.com/@pcdmt"
-                 class="social-link social-yt"
-                 target="_blank" rel="noopener noreferrer"
-                 aria-label="YouTube">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <a
+                href="https://www.youtube.com/@pcdmt"
+                class="social-link social-yt"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -714,7 +1040,9 @@
             <ul>
               <li><a href="anand-arna-seba.html">Anand Arna Seba</a></li>
               <li><a href="sanman-seba.html">Sanman Seba</a></li>
-              <li><a href="jiban-rakhshya-seba.html">Jiban Rakhshya Seba</a></li>
+              <li>
+                <a href="jiban-rakhshya-seba.html">Jiban Rakhshya Seba</a>
+              </li>
               <li><a href="blanket-distribution.html">Abasyak Seba</a></li>
             </ul>
           </div>
@@ -725,38 +1053,108 @@
             <ul class="footer-contact-list">
               <li>
                 <span class="footer-contact-icon">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.47 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"/></svg>
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.47 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"
+                    />
+                  </svg>
                 </span>
                 <a href="tel:+918144918717">+91 81449 18717</a>
               </li>
               <li>
                 <span class="footer-contact-icon">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
                 </span>
-                <a href="mailto:pratapchandradasmemorialtrust@gmail.com" class="footer-email-link">pratapchandradasmemorialtrust<wbr>@gmail.com</a>
+                <a
+                  href="mailto:pratapchandradasmemorialtrust@gmail.com"
+                  class="footer-email-link"
+                  >pratapchandradasmemorialtrust<wbr />@gmail.com</a
+                >
               </li>
               <li>
                 <span class="footer-contact-icon">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                    />
+                  </svg>
                 </span>
-                <a href="https://whatsapp.com/channel/0029VbCTvtfFHWqAD6LrUH38" target="_blank" rel="noopener noreferrer">WhatsApp Channel</a>
+                <a
+                  href="https://whatsapp.com/channel/0029VbCTvtfFHWqAD6LrUH38"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp Channel</a
+                >
               </li>
               <li>
                 <span class="footer-contact-icon">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
                 </span>
-                <a href="https://www.instagram.com/pcdmt_2025/?hl=en#" target="_blank" rel="noopener noreferrer">@pcdmt_2025</a>
+                <a
+                  href="https://www.instagram.com/pcdmt_2025/?hl=en#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >@pcdmt_2025</a
+                >
               </li>
             </ul>
           </div>
-
         </div>
 
         <!-- Footer bottom bar -->
         <div class="footer-bottom">
-          <p>&copy; 2026 Pratap Chandra Das Memorial Trust. All rights reserved.</p>
+          <p>
+            &copy; 2026 Pratap Chandra Das Memorial Trust. All rights reserved.
+          </p>
           <div class="footer-credit">
-            Made with <span class="footer-heart">&hearts;</span> by <a href="https://klypertechnology.com" target="_blank" rel="noopener">Klyper Technology</a>
+            Made with <span class="footer-heart">&hearts;</span> by
+            <a
+              href="https://klypertechnology.com"
+              target="_blank"
+              rel="noopener"
+              >Klyper Technology</a
+            >
           </div>
         </div>
       </div>
