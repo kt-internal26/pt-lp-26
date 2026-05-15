@@ -7,7 +7,13 @@
 
 /* --------------------------------------------------
    Auto-switch tab based on URL hash (#donate)
+   DEFAULT: Show donation tab (membership closed)
 -------------------------------------------------- */
+// Default to donation mode since membership is temporarily closed
+window.addEventListener('DOMContentLoaded', function() {
+  switchMode('donate');
+});
+
 if (window.location.hash === '#donate') {
   switchMode('donate');
   const donateEl = document.getElementById('donate');
@@ -18,6 +24,13 @@ if (window.location.hash === '#donate') {
    Tab / Mode Switcher
 -------------------------------------------------- */
 function switchMode(mode) {
+  // Prevent switching to membership mode (temporarily closed)
+  if (mode === 'member') {
+    // Show alert that membership is closed
+    alert('Membership applications are temporarily closed. Please check back later or make a donation to support our programs.');
+    return;
+  }
+  
   document.querySelectorAll('.mem-tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.mem-mode-panel').forEach(p => p.classList.remove('active'));
   const tab   = document.getElementById('tab-' + mode);
