@@ -1,4 +1,34 @@
 ﻿<!doctype html>
+<!--
+  ========================================
+  MEMBERSHIP TEMPORARILY CLOSED
+  ========================================
+  
+  TO RE-ENABLE MEMBERSHIP IN THE FUTURE:
+  
+  1. Find the line: <div id="mode-member" class="mem-mode-panel membership-temporarily-closed">
+     Remove: membership-temporarily-closed
+     Result: <div id="mode-member" class="mem-mode-panel active">
+  
+  2. Find the membership tab button and restore it:
+     Change the icon from 🔒 to 🌟
+     Change "Temporarily Closed" to "Become an official member"
+     Remove: style="opacity: 0.6; cursor: not-allowed;" and title attribute
+     Add "active" class back to membership tab
+     Remove "active" class from donation tab
+  
+  3. In js/membership.js:
+     Remove or comment out the membership prevention code in switchMode()
+     Remove the DOMContentLoaded event that forces donation mode
+  
+  4. Update the page hero section:
+     Change title back to "Be Part of the Change"
+     Update subtitle to mention both membership and donation options
+     Restore the membership badge
+  
+  That's it! The form and all functionality is preserved below.
+  ========================================
+-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +38,7 @@
       name="description"
       content="Join Pratap Chandra Das Memorial Trust as a member or make a donation. Become part of a community dedicated to compassion and change."
     />
-    <title>Membership &amp; Donate — Pratap Chandra Das Memorial Trust</title>
+    <title>Donate — Pratap Chandra Das Memorial Trust</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -94,24 +124,22 @@
         <div class="breadcrumb">
           <a href="index.html">Home</a>
           <span>›</span>
-          <span>Membership & Donate</span>
+          <span>Donate</span>
         </div>
-        <div class="section-tag animate-fade-up">Join Our Mission</div>
+        <div class="section-tag animate-fade-up">Support Our Mission</div>
         <h1 class="section-title animate-fade-up delay-1">
-          Be Part of the Change
+          Make a Difference Today
         </h1>
         <p class="section-subtitle animate-fade-up delay-2">
-          Choose how you'd like to support us — become a lifelong member of our
-          family or make a one-time contribution. Every act of giving creates
-          ripples of impact.
+          Your contribution creates lasting impact in our community. Membership applications are temporarily closed, but you can still support our vital programs through donations.
         </p>
 
         <!-- Trust badges row -->
         <div class="mem-hero-badges animate-fade-up delay-3">
           <span class="mem-hero-badge">🏛️ Registered Trust</span>
           <span class="mem-hero-badge">🔒 Secure UPI Payments</span>
-          <span class="mem-hero-badge">📜 Official Member Certificate</span>
           <span class="mem-hero-badge">💬 WhatsApp Confirmation</span>
+          <span class="mem-hero-badge">💙 Every Rupee Counts</span>
         </div>
       </div>
     </div>
@@ -119,34 +147,69 @@
     <!-- ===== MODE SELECTOR ===== -->
     <section class="mem-mode-section" id="donate">
       <div class="container">
+        <!-- Membership Closure Notice -->
+        <div class="membership-tab-notice reveal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          <span>Membership applications are temporarily closed. Please check back later or make a donation to support our programs.</span>
+        </div>
+        
         <!-- Mode Tabs -->
         <div class="mem-tabs reveal">
           <button
-            class="mem-tab active"
+            class="mem-tab"
             id="tab-member"
             onclick="switchMode('member')"
+            style="opacity: 0.6; cursor: not-allowed;"
+            title="Membership temporarily closed"
           >
-            <span class="mem-tab-icon">🌟</span>
+            <span class="mem-tab-icon">🔒</span>
             <div>
               <strong>Membership</strong>
-              <small>Become an official member</small>
+              <small>Temporarily Closed</small>
             </div>
           </button>
           <button
-            class="mem-tab"
+            class="mem-tab active"
             id="tab-donate"
             onclick="switchMode('donate')"
           >
             <span class="mem-tab-icon">💙</span>
             <div>
-              <strong>Donation Only</strong>
-              <small>Contribute without membership</small>
+              <strong>Make a Donation</strong>
+              <small>Support our programs</small>
             </div>
           </button>
         </div>
 
         <!-- ===================== MODE: MEMBERSHIP ===================== -->
-        <div id="mode-member" class="mem-mode-panel active">
+        <div id="mode-member" class="mem-mode-panel membership-temporarily-closed">
+          
+          <!-- MEMBERSHIP CLOSED NOTICE -->
+          <div class="membership-closed-notice reveal">
+            <div class="membership-closed-icon">🔒</div>
+            <h2 class="membership-closed-title">Membership Temporarily Closed</h2>
+            <p class="membership-closed-message">
+              We are currently not accepting new membership applications as we restructure our membership program to serve you better. We sincerely appreciate your interest in joining the Pratap Chandra Das Memorial Trust family.
+            </p>
+            <p class="membership-closed-message" style="margin-bottom: 24px;">
+              In the meantime, you can still support our mission through donations. Your generosity continues to transform lives in our community.
+            </p>
+            <a href="#donate" class="membership-closed-cta" onclick="switchMode('donate')">
+              💙 Make a Donation Instead
+            </a>
+            <div class="membership-closed-contact">
+              <strong>Have questions?</strong><br>
+              Contact us at <a href="tel:+918144918717">+91 81449 18717</a> or WhatsApp us for updates on when membership reopens.
+            </div>
+          </div>
+          
+          <!-- MEMBERSHIP FORM (HIDDEN - Keep for future use) -->
+          <!-- To re-enable membership: Remove the class "membership-temporarily-closed" from the div above -->
+          
           <!-- ===== MEMBERSHIP CATEGORY + PLAN SELECTOR ===== -->
           <div class="mcat-selector reveal">
             <div class="mcat-top">
@@ -539,7 +602,7 @@
         <!-- END MODE: MEMBERSHIP + DONATION -->
 
         <!-- ===================== MODE: DONATION ONLY ===================== -->
-        <div id="mode-donate" class="mem-mode-panel">
+        <div id="mode-donate" class="mem-mode-panel active">
           <div class="donate-only-wrap reveal">
             <div class="donate-only-left">
               <div class="section-tag">Simple &amp; Secure</div>
@@ -1186,3 +1249,4 @@
     <script src="js/membership.js" defer></script>
   </body>
 </html>
+
